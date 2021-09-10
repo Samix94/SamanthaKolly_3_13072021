@@ -7,7 +7,55 @@ h1 h2 h3 h4{
     font-family: 'Shrikland',sans-serif;
     background-color: #fff;
     margin: auto;
+}/*GENERAL*/
+html{
+    width: 100%;
 }
+body{
+    background-color: #fff;
+    margin: 0;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+}
+h1 h2 h3 h4{
+    font-family: 'Shrikhand',sans-serif;
+}
+
+/*HEADER mobile first*/
+header{
+    box-sizing: border-box;
+    height: 3rem;
+    position: relative;
+}
+
+header img{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    margin-top: 0;
+}
+
+main{
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+
+/*TAB AND LANDSCAPE*/
+@media screen and (min-width:768px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 4px;
+        padding-top: 0px;
+    }
+    
+/*PC*/
+@media screen and (min-width:1253px) {
+    header{
+        margin: 4px 50px;
+    }
 article{
     padding: 20px 15px;
 }
