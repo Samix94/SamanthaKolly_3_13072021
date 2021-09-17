@@ -13,7 +13,7 @@ h1 h2 h3 h4{
     font-family: 'Shrikhand',sans-serif;
 }
 
-/*HEADER mobile first*/
+/*HEADER*/
 header{
     box-sizing: border-box;
     height: 3rem;
@@ -28,9 +28,169 @@ header img{
 
 main{
     width: 100%;
-    background-color: #f6f6f6;
 }
 
+.search{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #eaeaea;
+    height: 2.5rem;
+    align-items: center;
+    box-shadow: inset 0px 11px 3px 9px #CCC;
+}
+
+input{
+    margin-right: 0.5rem;
+}
+
+/*SECTION RESERVER*/
+.reserver{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reserver h1{
+    margin-bottom: 0;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.reserver p{
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.reserver a{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    background-size: 200%;
+    background-image: linear-gradient(90deg, #FF79DA, #9356DC);
+    background-position: 80%;
+    box-shadow: 0 0 5px #00002e;
+    margin-bottom: 3rem;
+}
+.reserver a:hover{
+    transform: scale(1.05);
+    background-position: 30%;
+}
+
+/*SECTION FONCTIONNEMENT*/
+.fonctionnement{
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 4rem;
+}
+.card-fn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 2rem;
+    box-shadow: 0 0.1rem 0.2rem 0.2rem rgba(214, 209, 209, 0.699);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: 4rem;
+    transition: all 0.2s ease-in;
+    position: relative;
+}
+.card-fn:hover{
+    background-color: #f5edff;
+    box-shadow: 10px 20px 19px rgba(0,0,0,0.1);
+    transform: scale(1.01);
+}
+.card-fn:hover i{
+    color: #9356DC;
+}
+.card-fn__order{
+    color: #fff;
+    position: absolute;
+    left: -0.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #9356DC;
+    border: 1px solid #9356DC;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SECTION RESTAURANTS*/
+#restaurants{
+    background-color: #efefef;
+}
+#restaurants h2{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+#restaurant-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.5rem;
+}
+.restaurant-container a{
+    border-radius: 1rem;
+    padding: 0;
+    margin-bottom: 2rem;
+    position: relative;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 0 0.8rem rgba(134, 134, 134, 0.432);
+    width: 80%;
+}
+.restaurant-container a:hover{
+    transform: scale(1.05);
+}
+.img-restaurant{
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    height: 12rem;
+    width: 100%;
+}
+.restaurant-container a{
+    text-decoration: none;
+    color: #000;
+}
+.overlay h3{
+    font-size: 100%;
+    margin: 1rem;
+}
+.overlay p{
+    font-size: 100%;
+    margin: 1rem;
+}
+fas fa-heart{
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 1.5rem;
+    cursor: grab;
+    transition: all .3s ease-in-out;
+}
+fas fa-heart:hover{
+    opacity: 1;
+    background: linear-gradient(90deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    color: transparent;
+    border-radius: 0.5rem;
+}
+ /*MEDIA QUERIES*/
+/*MOBILE*/
 
 /*TAB AND LANDSCAPE*/
 @media screen and (min-width:768px) {
@@ -46,9 +206,4 @@ main{
 @media screen and (min-width:1253px) {
     header{
         margin: 4px 50px;
-    }
-article{
-    padding: 20px 15px;
-}
-
-/*HEADER mobile first*/
+    }  
