@@ -12,19 +12,17 @@ p{
 h1 h2 h3 h4 span{
     font-family: 'Shrikhand',sans-serif;
 }
-
+img{
+    max-width: 100%;
+}
 /*HEADER*/
-header{
+header{    
     box-sizing: border-box;
     height: 3rem;
 }
-
-header img{
-    font-family: 'Shrikhand', cursive;
+.logo{
     text-align: center;
-    margin: 0;
 }
-
 main{
     width: 100%;
 }
@@ -92,7 +90,7 @@ input{
     margin-top: 3rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .card-fn{
     display: flex;
@@ -143,7 +141,7 @@ input{
     align-items: center;
     padding-top: 3.5rem;
 }
-.restaurant-container a{
+#restaurant-container a{
     border-radius: 1rem;
     padding: 0;
     margin-bottom: 2rem;
@@ -152,14 +150,14 @@ input{
     box-shadow: 0 0 0.8rem rgba(134, 134, 134, 0.432);
     width: 80%;
 }
-.restaurant-container a:hover{
+#restaurant-container a:hover{
     transform: scale(1.05);
 }
 .img-restaurant{
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
     height: 12rem;
-    width: 50%;
+    width: 100%;
 }
 .restaurant-container a{
     text-decoration: none;
@@ -216,20 +214,21 @@ fas fa-heart:hover{
             flex-direction: row;
         }
     }
- /*MEDIA QUERIES*/
+
+/*MEDIA QUERIES*/
 /*MOBILE*/
 @media screen and (max-width:320px){
-.fonctionnement{
+    .fonctionnement{
     margin-top: 3rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 3rem;
-}
-.card-fn i{
+    }
+    .card-fn i{
     position: absolute;
     left: 1.1rem;
     color: #bdbdbd;
-}
+    }
 }
 
 /*TAB AND LANDSCAPE*/
@@ -264,7 +263,7 @@ fas fa-heart:hover{
         margin-left: 4rem;
         margin-right: 4rem;
     }
-    .restaurant-container a{
+    #restaurant-container a{
         width: 40%;
     }
 }
@@ -300,6 +299,6 @@ fas fa-heart:hover{
         margin-left: 4rem;
         margin-right: 4rem;
     }
-    .restaurant-container a{
+    #restaurant-container a{
         width: 40%;
     }
