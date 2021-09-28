@@ -1,0 +1,47 @@
+/*GENERAL*/
+html{
+    width: 100%;
+}
+body{
+    background-color: #fff;
+    margin: 0;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+}
+h1 h2 h3 h4 span{
+    font-family: 'Shrikhand',sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/*HEADER*/
+main{    
+    background-color: #f6f6f6;
+}
+header{
+    height: 3rem;
+    position: relative;
+}
+header h1{
+    font-family: 'Shrikhand',cursive;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+header a{
+    position: absolute;
+    left: 1.2rem;
+    top: 0.5rem;
+}
+header i{
+    font-size: 1.8rem;
+    color: black;
+}
+.fas fa-arrow-left{
+    color: #9356DC;
+}
+header i:visited{
+    text-decoration: none;
+    color: black;
+}
+
