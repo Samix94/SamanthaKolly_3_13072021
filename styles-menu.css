@@ -1,11 +1,4 @@
 /*GENERAL*/
-html{
-    width: 100%;
-}
-body{
-    background-color: #fff;
-    margin: 0;
-}
 p{
     font-family: 'Roboto',sans-serif;
 }
@@ -17,15 +10,18 @@ img{
 }
 
 /*HEADER*/
-main{    
+.page{    
     background-color: #f6f6f6;
+}
+.logo{
+    text-align: center;
 }
 header{
     height: 3rem;
     position: relative;
 }
 header h1{
-    font-family: 'Shrikhand',cursive;
+    font-family: 'Shrikhand', cursive;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -62,15 +58,15 @@ header i:visited{
     background-color: #f6f6f6;
     bottom: 3rem;
     z-index: 1;
-}
-#menu header{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 3rem;
 }
-.menu-title{
-    font-family: 'Shrikhand',cursive;
-    padding-top: 2rem;
+.menu_title{
+    font-family: 'Shrikhand', cursive;
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: bold;
 }
 .heart-like i, .heart-gradient i{
     font-size: 2rem;
@@ -89,6 +85,9 @@ header i:visited{
 .heart-gradient i:hover{
     opacity: 1;
     background: linear-gradient(90deg,#FF79DA,#9356DC);
+    background-clip: text;
+    color: transparent;
+    border-radius: 0.5rem;
 }
 
 /*PLAT*/
@@ -97,9 +96,11 @@ header i:visited{
     margin-right: 1rem;
 }
 .plats section h2{
+    text-align: left;
     font-weight: lighter;
     font-size: 100%;
     margin-bottom: 0;
+    font-weight: bold;
 }
 .plats hr{
     width: 2.6rem;
@@ -145,25 +146,22 @@ header i:visited{
     top: 1rem;
     font-weight: bold;
 }
-.prix span{
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
-    font-weight: bold;
-}
-.plats h3, description{
+.plats h3, .description{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 .plats h3{
     position: absolute;
+    font-size: 95%;
     top: 0;
+    font-weight: bold;
 }
-.descrition{
+.description{
     width: 70%;
     position: absolute;
     top: 2rem;
+    bottom: 2rem;
     font-size: 95%;
 }
 .plats span{
@@ -195,9 +193,6 @@ header i:visited{
     visibility: visible;
 }
 .plats div:hover .prix{
-    left: 65%;
-}
-.plats div:hover .prix span{
     left: 65%;
 }
 .plats div:hover .descrition{
@@ -241,5 +236,124 @@ plats div:hover i{
     transform: scale(1.05);
     background-position: 30%;
 }
+/*FOOTER*/
+footer{
+    background-color: #353535;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+footer h4{
+    font-family: 'Shrikhand',cursive;
+    margin-left: 2.5rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer li{
+    font-family: 'Roboto',sans-serif;
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+footer li:hover a{
+    color: #FF79DA;
+}
 
+/*MEDIA QUERIES*/
 /*MOBILE*/
+@media (min-width:400px){
+    .heart-like i, .heart-gradient i{
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+    }
+    .prix{
+        position: absolute;
+        font-weight: bold;
+        top: 1rem;
+        left: 85%;
+    }
+    .plats h3{
+        position: absolute;
+        width: 70%;
+        top: 0;
+    }
+}
+@media (max-width:320px){
+    .menu_title{
+        font-size: 130%;
+    }
+    .heart-like i, .heart-gradient i{
+        position: absolute;
+        right: 0.8rem;
+        top: 1.9rem;
+    }
+    .prix{
+        position: absolute;
+        font-weight: bold;
+        font-size: 95%;
+        top: 2rem;
+        left: 80%;
+    }
+    .plats h3{
+        position: absolute;
+        width: 70%;
+        padding-top: 0;
+        font-size: 100%;
+    }
+}
+@media (min-width:321px){
+    .heart-like i, .heart-gradient i{
+        position: absolute;
+        right: 1.5rem;
+        top: 1.9rem;
+    }
+    .prix{
+        position: absolute;
+        font-weight: bold;
+        top: 2rem;
+        left: 85%;
+    }
+    .plats h3{
+        position: absolute;
+        width: 70%;
+        top: 0;
+        font-size: 100%;
+    }
+}
+
+/*TAB AND LANDSCAPE AND DESKTOP*/
+@media (min-width:768px){
+    .heart-like i, .heart-gradient i{
+        right: 30%;
+    }
+    .menu_title{
+        font-size: large;
+        text-align: center;
+    }
+    .plats h2, plats hr{
+        text-align: left;
+        margin-left: 30%;
+        margin-top: 2rem;
+        font-size: 130%;
+    }
+    .plats div{
+        margin-left: 30%;
+        margin-right: 30%;
+        align-items: center;
+    }
+    .plats div:hover span{
+        width: 20%;
+        left: 80%;
+    }
+    .prix{
+        left: 80%;
+    }
+    .plats div:hover .prix{
+        left: 70%;
+    }
+    footer{
+        flex-direction: row;
+    }
+}
