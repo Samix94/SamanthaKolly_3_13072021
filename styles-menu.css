@@ -8,6 +8,10 @@ h1 h2 h3 h4 span{
 img{
     max-width: 100%;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 
 /*HEADER*/
 .page{    
@@ -85,7 +89,7 @@ header i:visited{
 .heart-gradient i:hover{
     opacity: 1;
     background: linear-gradient(90deg,#FF79DA,#9356DC);
-    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     border-radius: 0.5rem;
 }
@@ -119,7 +123,7 @@ header i:visited{
     padding-left: 1rem;
     padding-top: 1rem;
     position: relative;
-    animation: fadeln 0.7s ease-in both, top0.5s linear;
+    animation: fadeln 0.7s ease-in both, top 0.5s linear;
 }
 .plats div:nth-of-type(1){
     animation-delay: 0s;
@@ -133,7 +137,7 @@ header i:visited{
 @keyframes fadeln{
     from{
         top:4rem;
-        opacity: 1;
+        opacity: 0;
     }
     to{
         top:0rem;
@@ -153,16 +157,15 @@ header i:visited{
 }
 .plats h3{
     position: absolute;
-    font-size: 95%;
     top: 0;
-    font-weight: bold;
 }
 .description{
+    height:1.6rem;
     width: 70%;
     position: absolute;
     top: 2rem;
     bottom: 2rem;
-    font-size: 95%;
+    font-size: 95%; 
 }
 .plats span{
     width: 0%;
@@ -195,7 +198,7 @@ header i:visited{
 .plats div:hover .prix{
     left: 65%;
 }
-.plats div:hover .descrition{
+.plats div:hover .description{
     width: 50%;
 }
 plats div:hover i{
@@ -208,6 +211,9 @@ plats div:hover i{
     to{
         transform: rotate(360deg);
     }
+}
+.{
+    text-transform: uppercase;
 }
 
 /*COMMANDE*/
@@ -354,6 +360,7 @@ footer li:hover a{
         left: 70%;
     }
     footer{
+        display: flex;
         flex-direction: row;
     }
 }
