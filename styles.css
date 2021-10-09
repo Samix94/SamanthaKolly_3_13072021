@@ -44,7 +44,7 @@ img{
     animation-timing-function: linear;
     visibility: hidden;
 }
-@keyframes cicle{
+@keyframes circle{
     0%{
         visibility: visible;
         transform: rotate(0deg);
@@ -258,7 +258,7 @@ main{
 .heart-gradient i:hover{
     opacity: 1;
     background: linear-gradient(90deg, #FF79DA, #9356DC);
-    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     border-radius: 0.5rem;
 }
@@ -273,11 +273,11 @@ footer h4{
     font-family: 'Shrikhand',cursive;
     margin-left: 2.5rem;
 }
-footer a{
+footer ul li a{
     text-decoration: none;
     color: white;
 }
-footer li{
+footer ul li{
     font-family: 'Roboto',sans-serif;
     list-style-type: none;
     margin-bottom: 0.5rem;
@@ -288,7 +288,7 @@ footer li:hover a{
 
 /*MEDIA QUERIES*/
 /*MOBILE*/
-@media screen(max-width:320px){
+@media (max-width:320px){
     .fonctionnement{
     margin-top: 3rem;
     margin-left: 1.5rem;
@@ -301,14 +301,14 @@ footer li:hover a{
     color: #bdbdbd;
     }
 }
-@media screen(max-width:321px){
+@media (min-width:321px){
     .card-fn i{
     position: absolute;
     left: 2rem;
     color: #bdbdbd;
     }
 }
-@media screen(max-width:400px){
+@media (min-width:400px){
     .card-fn i{
     position: absolute;
     left: 2.5rem;
@@ -317,7 +317,7 @@ footer li:hover a{
 }
 
 /*TAB AND LANDSCAPE*/
-@media screen(min-width:768px) and (max-width:1252px){
+@media (min-width:768px) and (max-width:1252px){
     .fonctionnement{
         margin-left: 10%;
         margin-right: 10%;
@@ -351,14 +351,11 @@ footer li:hover a{
     #restaurant-container a{
         width: 45%;
     }
-    footer{
-        flex-direction: row;
-    }
 }
     
 /*PC*/
-@media screen(min-width:1253px){
-    .container{
+@media (min-width:1253px){
+    .card-fn{
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -369,17 +366,7 @@ footer li:hover a{
         margin-bottom: 1rem;
     }
     .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
         padding-top: 0.5rem;
-    }
-    .card-fn{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-right: 10%;
-        width: 100%;
     }
     #restaurants h3{
         display: flex;
@@ -387,15 +374,56 @@ footer li:hover a{
         padding-left: 0;
         padding-right: 0;
         padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     #restaurant-container{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
-        margin: 0;
-        padding: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     #restaurant-container a{
-    width: 23%;
+        width: 45%;
     }
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width:1810px){
+    .card-fn{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .fonctionnement h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .container{
+        padding-top: 0.5rem;
+    }
+    #restaurants h3{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    #restaurant-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    #restaurant-container a{
+        width: 45%;
+    }
+}
+}
