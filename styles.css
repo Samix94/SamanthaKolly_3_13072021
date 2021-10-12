@@ -238,7 +238,7 @@ main{
     font-size: 100%;
     margin: 1rem;
 }
-.heart-like i, .heart-gradient i{
+.heart-gradient i{
     position: absolute;
     right: 2rem;
     bottom: 2rem;
@@ -246,21 +246,13 @@ main{
     cursor: grab;
     transition: all .3s ease-in-out;
 }
-.heart-like i{
-    opacity: 1;
-}
-.heart-gradient i{
-    opacity: 0;
-}
-.heart-like i:hover{
-    opacity: 0;
-}
 .heart-gradient i:hover{
     opacity: 1;
     background: linear-gradient(90deg, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     color: transparent;
     border-radius: 0.5rem;
+    font-weight: bold;
 }
  /*FOOTER*/
 footer{
@@ -319,9 +311,7 @@ footer li:hover a{
 /*TAB AND LANDSCAPE*/
 @media (min-width:768px) and (max-width:1252px){
     .fonctionnement{
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 0;
+        margin : 0 auto;
     }
     .fonctionnement h2{
         display: flex;
@@ -356,8 +346,7 @@ footer li:hover a{
 /*PC*/
 @media (min-width:1253px){
     .card-fn{
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 28%;
     }
     .fonctionnement h2{
         display: flex;
@@ -366,6 +355,8 @@ footer li:hover a{
         margin-bottom: 1rem;
     }
     .container{
+        display: flex;
+        justify-content: space-evenly;
         padding-top: 0.5rem;
     }
     #restaurants h3{
@@ -425,5 +416,4 @@ footer li:hover a{
     #restaurant-container a{
         width: 45%;
     }
-}
 }
