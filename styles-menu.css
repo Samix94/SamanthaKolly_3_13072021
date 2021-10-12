@@ -72,26 +72,18 @@ header i:visited{
     text-align: center;
     font-weight: bold;
 }
-.heart-like i, .heart-gradient i{
+.heart-gradient i{
     font-size: 2rem;
     cursor: grab;
     transition: all .3s ease-in-out;
-}
-.heart-like i{
-    opacity: 1;
-}
-.heart-gradient i{
-    opacity: 0;
-}
-.heart-like i:hover{
-    opacity: 0;
 }
 .heart-gradient i:hover{
     opacity: 1;
     background: linear-gradient(90deg,#FF79DA,#9356DC);
     -webkit-background-clip: text;
-    color: transparent;
+    color:transparent;
     border-radius: 0.5rem;
+    font-weight: bold;
 }
 
 /*PLAT*/
