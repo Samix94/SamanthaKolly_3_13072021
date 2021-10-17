@@ -323,7 +323,7 @@ footer li:hover a{
 
 /*TAB AND LANDSCAPE AND DESKTOP*/
 @media (min-width:768px){
-    .heart-like i, .heart-gradient i{
+    .heart-gradient i{
         right: 30%;
     }
     .menu_title{
