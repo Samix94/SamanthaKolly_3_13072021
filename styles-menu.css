@@ -261,7 +261,7 @@ footer li:hover a{
 /*MEDIA QUERIES*/
 /*MOBILE*/
 @media (min-width:400px){
-    .heart-like i, .heart-gradient i{
+    .heart-gradient i{
         position: absolute;
         right: 2rem;
         top: 2rem;
@@ -282,7 +282,7 @@ footer li:hover a{
     .menu_title{
         font-size: 130%;
     }
-    .heart-like i, .heart-gradient i{
+    .heart-gradient i{
         position: absolute;
         right: 0.8rem;
         top: 1.9rem;
@@ -302,7 +302,7 @@ footer li:hover a{
     }
 }
 @media (min-width:321px){
-    .heart-like i, .heart-gradient i{
+    .heart-gradient i{
         position: absolute;
         right: 1.5rem;
         top: 1.9rem;
@@ -330,7 +330,7 @@ footer li:hover a{
         font-size: large;
         text-align: center;
     }
-    .plats h2, plats hr{
+    .plats  h2, plats hr{
         text-align: left;
         margin-left: 30%;
         margin-top: 2rem;
