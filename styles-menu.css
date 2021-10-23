@@ -189,11 +189,12 @@ header i:visited{
 }
 .plats div:hover .prix{
     left: 65%;
+    transition: all .3s ease-in-out;
 }
 .plats div:hover .description{
     width: 50%;
 }
-plats div:hover i{
+.plats div:hover i{
     animation: rotation 0.3s linear 0.3s;
 }
 @keyframes rotation{
@@ -350,6 +351,7 @@ footer li:hover a{
     }
     .plats div:hover .prix{
         left: 70%;
+        transition: all .3s ease-in-out;
     }
     footer{
         display: flex;
