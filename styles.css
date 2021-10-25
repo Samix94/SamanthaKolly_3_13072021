@@ -7,11 +7,11 @@
 
 /*GENERAL*/
 html{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto',sans-serif;
     width: 100%;
 }
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto',sans-serif;
     background-color: #fff;
     margin: 0;
 }
@@ -47,7 +47,7 @@ img{
     position: fixed;
     border-radius: 50%;
     border: 10px solid #fff;
-    border-bottom-color: transparent;
+    border-bottom-color: #9356DC;
     animation-duration: 3s;
     animation-name: circle;
     animation-timing-function: linear;
@@ -55,11 +55,11 @@ img{
 }
 @keyframes loader {
   0% {
-      background-color: #9356DC;
+      background-color: transparent;
       z-index: 2;
   }
   99% {
-      background-color: #9356DC;
+      background-color: transparent;
       z-index: 2;
   }
   100% {
