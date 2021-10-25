@@ -7,14 +7,16 @@
 
 /*GENERAL*/
 html{
+    font-family: "Roboto", sans-serif;
     width: 100%;
 }
 body{
+    font-family: "Roboto", sans-serif;
     background-color: #fff;
     margin: 0;
 }
 p{
-    font-family: 'Roboto Light',arial;
+    font-family: 'Roboto',sans-serif;
 }
 h1 h2 h3 h4 span{
     font-family: 'Shrikhand',sans-serif;
